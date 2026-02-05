@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleMix - Professional Audio Mixer for Discord</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-brand">SIMPLE<span>MIX</span></a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="SimpleMix-Setup-1.0.0.exe" class="nav-cta" download>Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Mix your audio.<br><span class="accent">Like a pro.</span></h1>
+        <p class="hero-sub">Route your microphone + guitar into Discord, Zoom, or any app. Compressor, EQ, noise gate &mdash; all in one lightweight mixer.</p>
+        <div class="hero-actions">
+          <a href="https://buy.polar.sh/polar_cl_uXSCY0sPBDSUZpIxv91akIWrtd1sVa83IBLZY1ik7C4" class="btn btn-primary" data-polar-checkout data-polar-checkout-theme="dark">Buy Now &mdash; $5</a>
+          <a href="SimpleMix-Setup-1.0.0.exe" class="btn btn-secondary" download>Download Free Trial</a>
+        </div>
+        <p class="hero-note">Windows &amp; macOS &bull; No subscription &bull; Lifetime updates</p>
+      </div>
+      <div class="hero-visual">
+        <!-- CSS App Mockup -->
+        <div class="app-mock">
+          <div class="mock-titlebar">
+            <div class="mock-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="mock-title">SIMPLE<span>MIX</span> &mdash; Audio Mixer</span>
+          </div>
+          <div class="mock-body">
+            <!-- Channel strips -->
+            <div class="mock-channels">
+              <div class="mock-strip">
+                <div class="mock-strip-label">INPUT 1 <span>MIC</span></div>
+                <div class="mock-device">Rode NT1-A</div>
+                <div class="mock-waveform">
+                  <svg viewBox="0 0 200 40" preserveAspectRatio="none">
+                    <path class="wave-line wave-anim-1" d="M0,20 Q10,8 20,20 T40,20 T60,20 Q70,6 80,20 T100,20 Q110,32 120,20 T140,20 Q150,10 160,20 T180,20 T200,20" fill="none" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div class="mock-level-bar"><div class="mock-level-fill" style="width:62%"></div></div>
+                <div class="mock-slider-row">
+                  <span>VOL</span>
+                  <div class="mock-slider"><div class="mock-slider-track"><div class="mock-slider-thumb" style="left:66%"></div></div></div>
+                  <span class="mock-val">100%</span>
+                </div>
+                <div class="mock-mute">MUTE</div>
+                <div class="mock-fx">
+                  <div class="mock-fx-item"><span class="mock-led on"></span> GATE</div>
+                  <div class="mock-fx-item"><span class="mock-led on"></span> EQ</div>
+                  <div class="mock-fx-item"><span class="mock-led"></span> COMP</div>
+                </div>
+              </div>
+              <div class="mock-strip">
+                <div class="mock-strip-label">INPUT 2 <span>GUITAR</span></div>
+                <div class="mock-device">Focusrite Scarlett 2i2</div>
+                <div class="mock-waveform">
+                  <svg viewBox="0 0 200 40" preserveAspectRatio="none">
+                    <path class="wave-line wave-anim-2" d="M0,20 Q8,4 16,20 T32,20 Q40,34 48,20 T64,20 Q72,8 80,20 T96,20 Q104,30 112,20 T128,20 Q136,6 144,20 T160,20 Q170,28 180,20 T200,20" fill="none" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div class="mock-level-bar"><div class="mock-level-fill" style="width:78%"></div></div>
+                <div class="mock-slider-row">
+                  <span>VOL</span>
+                  <div class="mock-slider"><div class="mock-slider-track"><div class="mock-slider-thumb" style="left:53%"></div></div></div>
+                  <span class="mock-val">80%</span>
+                </div>
+                <div class="mock-mute">MUTE</div>
+                <div class="mock-fx">
+                  <div class="mock-fx-item"><span class="mock-led"></span> GATE</div>
+                  <div class="mock-fx-item"><span class="mock-led on"></span> EQ</div>
+                  <div class="mock-fx-item"><span class="mock-led on"></span> COMP</div>
+                </div>
+              </div>
+            </div>
+            <!-- Master -->
+            <div class="mock-master">
+              <div class="mock-master-top">
+                <div>
+                  <span class="mock-strip-label">OUTPUT</span>
+                  <div class="mock-device">VB-Cable</div>
+                </div>
+                <div class="mock-slider-row">
+                  <span>MASTER</span>
+                  <div class="mock-slider"><div class="mock-slider-track"><div class="mock-slider-thumb" style="left:66%"></div></div></div>
+                  <span class="mock-val">100%</span>
+                </div>
+              </div>
+              <div class="mock-spectrum">
+                <div class="spec-bars">
+                  <div style="height:45%"></div><div style="height:65%"></div><div style="height:80%"></div>
+                  <div style="height:95%"></div><div style="height:88%"></div><div style="height:72%"></div>
+                  <div style="height:90%"></div><div style="height:100%"></div><div style="height:85%"></div>
+                  <div style="height:70%"></div><div style="height:78%"></div><div style="height:60%"></div>
+                  <div style="height:82%"></div><div style="height:68%"></div><div style="height:55%"></div>
+                  <div style="height:50%"></div><div style="height:42%"></div><div style="height:35%"></div>
+                  <div style="height:30%"></div><div style="height:22%"></div><div style="height:18%"></div>
+                  <div style="height:12%"></div><div style="height:8%"></div><div style="height:5%"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Controls -->
+            <div class="mock-controls">
+              <div class="mock-hw-btn">REFRESH</div>
+              <div class="mock-hw-btn">HOTKEYS</div>
+              <div class="mock-hw-btn primary">MIXING</div>
+            </div>
+          </div>
+          <div class="mock-statusbar">Mixing active &bull; 48kHz</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2>Everything you need.<br><span class="accent">Nothing you don't.</span></h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M5 8l7-7 7 7M5 16l7 7 7-7"/></svg>
+          </div>
+          <h3>2-Channel Mixer</h3>
+          <p>Route mic + guitar (or any input) into a single virtual output. Each channel with independent volume, mute, and processing.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 12h16M12 4v16"/></svg>
+          </div>
+          <h3>Compressor &amp; Gate</h3>
+          <p>Per-channel dynamics processing. Keep your voice consistent and kill background noise with threshold, ratio, and makeup controls.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l3-9 4 18 3-9h4"/></svg>
+          </div>
+          <h3>3-Band EQ</h3>
+          <p>Shape your tone with bass, mid, and treble controls per channel. Cut mud from your guitar, add presence to your voice.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <h3>Real-Time Visualizer</h3>
+          <p>Oscilloscope waveforms per channel and a 48-band spectrum analyzer on the master bus. See your audio in real time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h4"/></svg>
+          </div>
+          <h3>Global Hotkeys</h3>
+          <p>Mute/unmute channels with customizable keyboard shortcuts &mdash; even when SimpleMix is in the background. Perfect for live play.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v18M18 3v18M6 12h12"/><circle cx="6" cy="6" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+          </div>
+          <h3>VB-Cable Ready</h3>
+          <p>Auto-detects VB-Cable virtual audio device. One-click setup to route your mix into Discord, OBS, Zoom, or any app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2>Simple pricing.<br><span class="accent">No subscriptions.</span></h2>
+      <div class="pricing-cards">
+        <div class="price-card">
+          <div class="price-badge">FREE TRIAL</div>
+          <div class="price-amount">$0</div>
+          <div class="price-period">7 days, full features</div>
+          <ul class="price-features">
+            <li>All mixer features</li>
+            <li>Compressor, EQ, Gate</li>
+            <li>Waveform visualizer</li>
+            <li>Global hotkeys</li>
+          </ul>
+          <a href="SimpleMix-Setup-1.0.0.exe" class="btn btn-secondary btn-full" download>Download Free Trial</a>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge accent">LIFETIME</div>
+          <div class="price-amount">$5</div>
+          <div class="price-period">one-time payment</div>
+          <ul class="price-features">
+            <li>Everything in Free Trial</li>
+            <li>Lifetime updates</li>
+            <li>Priority support</li>
+            <li>Future features included</li>
+          </ul>
+          <a href="https://buy.polar.sh/polar_cl_uXSCY0sPBDSUZpIxv91akIWrtd1sVa83IBLZY1ik7C4" class="btn btn-primary btn-full" data-polar-checkout data-polar-checkout-theme="dark">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">SIMPLE<span>MIX</span></span>
+      <span class="footer-copy">&copy; 2026 SimpleMix. Built for musicians.</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@polar-sh/checkout@0.1/dist/embed.global.js" defer data-auto-init></script>
+</body>
+</html>
