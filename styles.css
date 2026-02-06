@@ -673,6 +673,103 @@ body {
   box-shadow: 0 0 4px var(--green-glow);
 }
 
+/* ─── Download Page ────────────────────────────────────────────────── */
+
+.download-page {
+  padding: 140px 0 100px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.download-page h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.download-sub {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 48px;
+}
+
+.download-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.download-card {
+  flex: 1;
+  max-width: 320px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 40px 28px 32px;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.download-card:not(.disabled):hover {
+  border-color: var(--accent-dim);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.download-card.disabled {
+  opacity: 0.5;
+}
+
+.download-badge-soon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--bg-panel);
+  border: 1px solid var(--accent-dim);
+  border-radius: 3px;
+  padding: 3px 8px;
+}
+
+.download-icon {
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.download-card h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.download-version {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 24px;
+}
+
+.download-req {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 12px;
+}
+
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 /* ─── Footer ───────────────────────────────────────────────────────── */
 
 .footer {
@@ -769,6 +866,15 @@ body {
   }
 
   .price-card {
+    max-width: 100%;
+  }
+
+  .download-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-card {
     max-width: 100%;
   }
 
