@@ -584,10 +584,250 @@ body {
   color: var(--text-secondary);
 }
 
+/* ─── How to Use ───────────────────────────────────────────────────── */
+
+.howto {
+  padding: 100px 0;
+}
+
+.howto h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: -0.5px;
+}
+
+.howto-steps {
+  display: flex;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.howto-step {
+  flex: 1;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 28px 24px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.howto-step:hover {
+  border-color: var(--accent-dim);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.howto-number {
+  position: absolute;
+  top: -16px;
+  left: 24px;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dim) 100%);
+  color: var(--bg-base);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px var(--accent-glow);
+}
+
+.howto-content h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+
+.howto-content p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.howto-visual {
+  background: var(--bg-recessed);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.howto-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.howto-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+}
+
+.howto-label.discord {
+  color: #5865F2;
+}
+
+.howto-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--text-primary);
+}
+
+.howto-select svg {
+  color: var(--text-dim);
+}
+
+.howto-note {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.howto-note strong {
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Discord Setup */
+.discord-setup {
+  max-width: 420px;
+  margin: 60px auto 0;
+  text-align: center;
+}
+
+.discord-setup h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.discord-setup > p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.discord-setup > p strong {
+  color: var(--text-primary);
+}
+
+.discord-mock {
+  background: #313338;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: left;
+}
+
+.discord-header {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f2f3f5;
+  margin-bottom: 20px;
+}
+
+.discord-field-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b5bac1;
+  margin-bottom: 8px;
+}
+
+.discord-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e1f22;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #f2f3f5;
+}
+
+.discord-dropdown svg {
+  color: #b5bac1;
+}
+
+.discord-note {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* Requirements callout */
+.howto-requirements {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  padding: 20px 24px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  text-align: left;
+}
+
+.howto-requirements h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.howto-requirements p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.howto-requirements p:last-child {
+  margin-bottom: 0;
+}
+
+.howto-requirements a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.howto-requirements a:hover {
+  text-decoration: underline;
+}
+
 /* ─── Pricing ──────────────────────────────────────────────────────── */
 
 .pricing {
   padding: 100px 0;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border);
 }
 
 .pricing h2 {
@@ -821,6 +1061,11 @@ body {
 
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .howto-steps {
+    flex-direction: column;
+    max-width: 400px;
   }
 
   .app-mock {
